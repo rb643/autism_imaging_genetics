@@ -125,7 +125,7 @@ p12 <- ggplot(data=ValidationOR2, aes(x=Dataset, y=OR, ymin=Lower.CI, ymax=Upper
         legend.title = element_blank(), 
         legend.text=element_text(size=6),
         legend.background = element_rect(fill=alpha('white',0.5)))
-
+multiplot(p10, p11, p12, plotlist = NULL, cols = 3)
 multiplot(p1, p4, p7, p10, p2, p5, p8, p11, p3, p6, p9, p12, plotlist = NULL, cols = 3)
 
 ### supplementary figures
